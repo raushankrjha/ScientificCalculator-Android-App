@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjha.www.scientific_calculator.MainActivity"
+
+    >
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Answer"
+
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        android:layout_above="@+id/buttonabout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/buttonscientific"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="?attr/colorControlNormal"
+        android:text="About"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignTop="@+id/buttonscientific" />
+
+    <Button
+        android:id="@+id/buttonscientific"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/buttoncancel"
+        android:layout_toEndOf="@+id/buttonabout"
+        android:layout_toRightOf="@+id/buttonabout"
+        android:backgroundTint="?attr/colorControlNormal"
+        android:text="Scientific"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignTop="@+id/buttoncancel" />
+
+    <Button
+        android:id="@+id/buttoncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonpercent"
+        android:layout_toEndOf="@+id/buttonscientific"
+        android:layout_toRightOf="@+id/buttonscientific"
+
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="X"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttoncancel"
+        android:layout_alignTop="@+id/buttoncancel"
+        android:layout_toEndOf="@+id/buttoncancel"
+        android:layout_toRightOf="@+id/buttoncancel"
+
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="AC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonopenbracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="("
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonclosebracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonopenbracket"
+        android:layout_alignBottom="@+id/buttonopenbracket"
+        android:layout_toEndOf="@+id/buttonabout"
+        android:layout_toRightOf="@+id/buttonabout"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text=")"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonclosebracket"
+        android:layout_alignBottom="@+id/buttonclosebracket"
+        android:layout_toEndOf="@+id/buttonscientific"
+        android:layout_toRightOf="@+id/buttonscientific"
+
+        android:backgroundTint="?attr/colorControlNormal"
+        android:text="%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttondiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonac"
+        android:layout_toEndOf="@+id/buttoncancel"
+        android:layout_toRightOf="@+id/buttoncancel"
+        android:backgroundTint="?attr/colorControlNormal"
+        android:text="/"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/button9"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_toEndOf="@+id/buttonopenbracket"
+        android:layout_toRightOf="@+id/buttonopenbracket"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="8"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonpercent"
+        android:layout_toEndOf="@+id/buttonclosebracket"
+        android:layout_toRightOf="@+id/buttonclosebracket"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="9"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonmult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignTop="@+id/button9"
+        android:layout_toEndOf="@+id/button9"
+        android:layout_toRightOf="@+id/button9"
+
+        android:backgroundTint="?attr/colorControlNormal"
+        android:text="*"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/button1"
+        android:layout_toEndOf="@+id/button0"
+        android:layout_toRightOf="@+id/button0"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button00"
+        android:layout_toRightOf="@+id/button00"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonequal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button3"
+        android:layout_toEndOf="@+id/buttonpoint"
+        android:layout_toRightOf="@+id/buttonpoint"
+
+        android:backgroundTint="?android:attr/colorControlNormal"
+        android:text="="
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_toEndOf="@+id/button0"
+        android:layout_toRightOf="@+id/button0"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toEndOf="@+id/button00"
+        android:layout_toRightOf="@+id/button00"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_toEndOf="@+id/buttonpoint"
+        android:layout_toRightOf="@+id/buttonpoint"
+
+        android:backgroundTint="?attr/colorControlNormal"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_toRightOf="@+id/button4"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button9"
+        android:layout_toEndOf="@+id/button8"
+        android:layout_toRightOf="@+id/button8"
+
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_toEndOf="@+id/button9"
+        android:layout_toRightOf="@+id/button9"
+
+        android:backgroundTint="?attr/colorControlNormal"
+        android:elevation="6dp"
+
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
